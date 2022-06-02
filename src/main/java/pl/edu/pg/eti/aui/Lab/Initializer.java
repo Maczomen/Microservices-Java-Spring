@@ -2,6 +2,10 @@ package pl.edu.pg.eti.aui.Lab;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
+import pl.edu.pg.eti.aui.Lab.entities.Tower;
+import pl.edu.pg.eti.aui.Lab.entities.TowerType;
+import pl.edu.pg.eti.aui.Lab.services.ServiceForTower;
+import pl.edu.pg.eti.aui.Lab.services.ServiceForTowerType;
 
 import javax.annotation.PostConstruct;
 
@@ -36,7 +40,7 @@ public class Initializer {
                     .name("Archer")
                     .range(100)
                     .attackSpeed(10)
-                    .type(frost_hell)
+                    .towerType(frost_hell)
                     .cost(100)
                     .damage(3)
                     .build();
@@ -45,7 +49,7 @@ public class Initializer {
                     .name("Cannon")
                     .range(50)
                     .attackSpeed(5)
-                    .type(hellfire)
+                    .towerType(hellfire)
                     .cost(300)
                     .damage(20)
                     .build();
@@ -54,7 +58,7 @@ public class Initializer {
                     .name("Mage")
                     .range(200)
                     .attackSpeed(6)
-                    .type(frost_hell)
+                    .towerType(frost_hell)
                     .cost(150)
                     .damage(5)
                     .build();

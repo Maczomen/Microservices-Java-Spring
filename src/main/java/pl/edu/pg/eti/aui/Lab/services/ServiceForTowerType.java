@@ -1,7 +1,9 @@
-package pl.edu.pg.eti.aui.Lab;
+package pl.edu.pg.eti.aui.Lab.services;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import pl.edu.pg.eti.aui.Lab.entities.TowerType;
+import pl.edu.pg.eti.aui.Lab.repositories.RepositoryForTowerType;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,7 +15,7 @@ public class ServiceForTowerType {
 
 
     public Optional<TowerType> find(String name) {
-        return repository.find(name);
+        return repository.findById(name);
     }
 
     public List<TowerType> findAll() {
@@ -21,7 +23,11 @@ public class ServiceForTowerType {
     }
 
     public void create(TowerType entity) {
-        repository.create(entity);
+        repository.save(entity);
+    }
+
+    public void update(TowerType entity) {
+        repository.save(entity);
     }
 
     public void delete(TowerType entity) {
