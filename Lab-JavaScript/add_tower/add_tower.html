@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Lab</title>
+        <script src="../script.js" defer="defer"></script>
+        <script type="module" src="add_tower.js" defer="defer"></script>
+    </head>
+    <body>
+        <h2>Add new tower</h2>
+        <p>Of tower type: <span id="towerType"></span></p>
+        <form id="infoForm">
+            <label for="name">Name:</label>
+            <input id="name" name="name"/>
+            <label for="range">Range:</label>
+            <input id="range" name="range" type="number"/>
+            <label for="attackSpeed">Attack speed:</label>
+            <input id="attackSpeed" name="attackSpeed" type="number"/>
+            <label for="cost">Cost:</label>
+            <input id="cost" name="cost" type="number"/>
+            <label for="damage">Damage:</label>
+            <input id="damage" name="damage" type="number"/>
+            <input type="submit" name="Add"/>
+        </form>
+        <a id="go_back">Go back to tower type list of towers view</a>
+    </body>
+</html>

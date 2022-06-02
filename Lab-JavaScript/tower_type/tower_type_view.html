@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Lab</title>
+    <script src="../script.js" defer="defer"></script>
+    <script type="module" src="tower_type_view.js" defer="defer"></script>
+</head>
+<body>
+    <h2 id="name">Tower type</h2>
+    <h3>Description:</h3>
+    <p>Name of bonus: <span id="bonusName"></span></p>
+    <p>Strength of bonus: <span id="bonusStrength"></span></p>
+
+    <h3>Towers</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>view</th>
+                <th>edit</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td>name</td>
+                <td><a href="#">view</a></td>
+                <td><a href="#">edit</a></td>
+                <td>
+                    <button>delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <a id="add_tower">Add new tower</a>
+    <a href="../index.html">Go back to tower type list</a>
+</body>
+</html>

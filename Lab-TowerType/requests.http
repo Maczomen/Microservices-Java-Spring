@@ -1,0 +1,34 @@
+GET http://localhost:8081/api/towerTypes
+
+###
+
+GET http://localhost:8081/api/towerTypes/Hellfire
+
+###
+
+GET http://localhost:8081/api/towerTypes/Light
+
+###
+
+POST http://localhost:8081/api/towerTypes
+Content-Type: application/json
+
+{
+  "name": "Light",
+  "bonusName": "holly sanctuary",
+  "bonusStrength": 111
+}
+
+###
+
+PUT http://localhost:8081/api/towerTypes/Light
+Content-Type: application/json
+
+{
+  "bonusName": "holly sanctuary v2",
+  "bonusStrength": 222
+}
+
+###
+
+DELETE http://localhost:8081/api/towerTypes/Light

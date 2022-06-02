@@ -1,0 +1,31 @@
+version: '3'
+services:
+  tower:
+    restart: always
+    build: ./Lab-Tower
+    expose:
+      - "8082"
+
+  towertype:
+    restart: always
+    build: ./Lab-TowerType
+    expose:
+      - "8081"
+
+  gateway:
+    restart: always
+    build: ./Lab-Gateway
+    expose:
+      - "8080"
+
+  main:
+    restart: always
+    build: ./Lab-JavaScript
+    expose:
+      - "8083"
+
+  proxy:
+    restart: always
+    build: ./Lab-ReverseProxy
+    ports:
+      - "80:80"

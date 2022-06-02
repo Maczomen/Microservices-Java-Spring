@@ -1,0 +1,12 @@
+{
+  "name": "Lab",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "Demo project for Spring Boot",
+  "scripts": {
+    "start": "http-server -p 8083 -c-1",
+    "dev": "http-server -p 8083 -c-1"
+  },
+  "devDependencies": {
+    "http-server": "0.12.3"
+  }
+}
