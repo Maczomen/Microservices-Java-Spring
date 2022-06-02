@@ -11,7 +11,7 @@
 	<groupId>pl.edu.pg.eti.aui</groupId>
 	<artifactId>Lab</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Microservices-Java-Spring</name>
+	<name>Lab</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
