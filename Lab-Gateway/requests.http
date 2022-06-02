@@ -1,0 +1,120 @@
+GET http://localhost:8080/api/towers
+
+###
+
+GET http://localhost:8080/api/towers/Mage
+
+###
+
+GET http://localhost:8080/api/towers/Summoner
+
+###
+
+POST http://localhost:8080/api/towers
+Content-Type: application/json
+
+{
+  "name": "Summoner",
+  "range": 50,
+  "attackSpeed": 1,
+  "towerType": "Hellfire",
+  "cost": 1200,
+  "damage": 100
+}
+
+###
+
+PUT http://localhost:8080/api/towers/Summoner
+Content-Type: application/json
+
+{
+  "range": 100,
+  "attackSpeed": 3,
+  "cost": 100,
+  "damage": 10
+}
+
+###
+
+DELETE http://localhost:8080/api/towers/Summoner
+
+####################################################################################################################################
+
+GET http://localhost:8080/api/towerTypes/Frost hell/towers
+
+###
+
+GET http://localhost:8080/api/towerTypes/Frost hell/towers/Mage
+
+###
+
+GET http://localhost:8080/api/towerTypes/Frost hell/towers/Summoner
+
+###
+
+POST http://localhost:8080/api/towerTypes/Frost hell/towers
+Content-Type: application/json
+
+{
+  "name": "Summoner",
+  "range": 50,
+  "attackSpeed": 1,
+  "towerType": "Frost hell",
+  "cost": 1200,
+  "damage": 100
+}
+
+###
+
+PUT http://localhost:8080/api/towerTypes/Frost hell/towers/Summoner
+Content-Type: application/json
+
+{
+  "range": 100,
+  "attackSpeed": 3,
+  "cost": 100,
+  "damage": 10
+}
+
+###
+
+DELETE http://localhost:8080/api/towerTypes/Frost hell/towers/Summoner
+
+
+
+####################################################################################################################################
+
+GET http://localhost:8080/api/towerTypes
+
+###
+
+GET http://localhost:8080/api/towerTypes/Hellfire
+
+###
+
+GET http://localhost:8080/api/towerTypes/Light
+
+###
+
+POST http://localhost:8080/api/towerTypes
+Content-Type: application/json
+
+{
+  "name": "Light",
+  "bonusName": "holly sanctuary",
+  "bonusStrength": 111
+}
+
+###
+
+PUT http://localhost:8080/api/towerTypes/Light
+Content-Type: application/json
+
+{
+  "bonusName": "holly sanctuary v2",
+  "bonusStrength": 222
+}
+
+###
+
+DELETE http://localhost:8080/api/towerTypes/Light
